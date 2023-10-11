@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+
+  
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e6e3ef,#0a023a);
+    background:url(wibu3.jpg);
+    background-size: cover;
+    background-position: right;
+    padding: 10px;
+}
+.card{
+    width: 350px;
+    height: 515px;
+    margin: 100px auto 0;
+    background:#fff;
+}.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition:transform 1s;
+    transform-style: preserve-3d;
+}
+.front,.back{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front{
+    background:url(wibu4.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+.front h2{
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Script',sans-serif;
+    color: #CCFFFF;
+    padding:65px 0 20px 70px;
+    margin-bottom:150px ;
+
+}
+.front p{
+    color: #110000;
+    font-size: 15px;
+    text-align: center;
+   
+    padding-bottom: 140px ;
+    font-weight: 1000  ;
+}
+.front button{
+    width: 120px;
+    border: 1px solid #fff;
+    background:transparent;
+    border-radius: 50px ;
+    cursor: pointer;
+    padding: 8px 20px;
+    color: white;
+    margin-left:100px ;
+}
+.back{
+    background:rgb(33, 31, 31);
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+}
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+.back h1{
+color: #CCFFFF;
+font-size: 30px;
+}
+.back p{
+    color: antiquewhite;
+}
+.back button{
+    width: 120px;
+    border: 1px solid #fff;
+    background:transparent;
+    border-radius: 50px ;
+    cursor: pointer;
+    padding: 8px 20px;
+    color: white;
+    margin-left:80px ;
+}
+a{ text-decoration: none;}
